@@ -149,16 +149,10 @@ public class MainActivity extends AppCompatActivity {
             trafficLight[i].setMapPoint(MapPoint.mapPointWithGeoCoord(latlong[i][0], latlong[i][1]));
             mapView.addPOIItem(trafficLight[i]);
 
-
-
             changeLight(trafficLight[i], grTime[i][0], grTime[i][1], pastTime);
         }
 
-
-
-
     }
-
 
 
     private void changeLight(MapPOIItem item, int green, int red, int pastTime){
